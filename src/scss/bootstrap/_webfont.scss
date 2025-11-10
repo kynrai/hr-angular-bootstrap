@@ -1,0 +1,14 @@
+$webfont-path: "../fonts/archivo";
+$styles: normal, italic;
+$weights: 200, 300, 400, 600, 700, 900;
+
+@each $weight in $weights {
+  @each $style in $styles {
+    @font-face {
+      font-family: "Archivo";
+      font-style: $style;
+      font-weight: $weight;
+      src: url("#{$webfont-path}/archivo-latin-#{$weight}-#{$style}.woff2") format("woff2");
+    }
+  }
+}

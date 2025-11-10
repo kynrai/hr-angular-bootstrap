@@ -1,0 +1,73 @@
+/**
+ * Spinner
+ */
+
+//== Spinners
+//
+//##
+$spinner-sm-size: 30px !default;
+$spinner-md-size: 60px !default;
+$spinner-lg-size: 90px !default;
+$spinner-speed: 1s !default;
+$spinner-zindex: 1080;
+
+@-webkit-keyframes spinner-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spinner-rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  border: solid $gray-900;
+  border-right-color: $primary;
+  border-radius: 50%;
+  display: inline-block;
+
+  animation-name: spinner-rotate;
+  animation-duration: $spinner-speed;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  &.spinner-sm {
+    border-width: calc($spinner-sm-size / 7);
+    width: $spinner-sm-size;
+    height: $spinner-sm-size;
+  }
+  &.spinner-md {
+    border-width: calc($spinner-md-size / 7);
+    width: $spinner-md-size;
+    height: $spinner-md-size;
+  }
+  &.spinner-lg {
+    border-width: calc($spinner-lg-size / 7);
+    width: $spinner-lg-size;
+    height: $spinner-lg-size;
+  }
+  &.spinner-inline {
+    $loading-spinner-size: $font-size-base;
+    border-width: calc($loading-spinner-size / 7);
+    width: $loading-spinner-size;
+    height: $loading-spinner-size;
+  }
+}

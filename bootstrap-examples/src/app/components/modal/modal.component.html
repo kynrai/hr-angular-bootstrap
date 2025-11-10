@@ -1,0 +1,29 @@
+<h2>Example</h2>
+<p>Included are the modal header, modal body (required for <code>padding</code>), and modal footer (optional). Please include modal headers with dismiss actions
+  whenever possible, or provide another explicit dismiss action.</p>
+<div class="hr-example">
+  <ng-template #content
+               let-modal>
+    <div class="modal-header">
+      <h5 class="modal-title">Modal title</h5>
+      <button type="button"
+              class="btn-close"
+              (click)="modal.dismiss('Cross click')"
+              aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <p>Modal body text goes here.</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button"
+              class="btn btn-secondary"
+              (click)="modal.close('Cancel click')">Cancel</button>
+      <button type="button"
+              class="btn btn-primary"
+              (click)="modal.close('Save click')">Save changes</button>
+    </div>
+  </ng-template>
+
+  <button class="btn btn-lg btn-outline-primary"
+          (click)="open(content)">Launch demo modal</button>
+</div>

@@ -1,0 +1,17 @@
+$color-palette: $blues, $purples, $reds, $limes, $greens;
+
+:root {
+  @each $palette in $color-palette {
+    @each $color, $value in $palette {
+      --hr-#{$color}: #{$value};
+    }
+  }
+}
+
+$custom-colors: (
+  "lime": $lime
+);
+
+$hr-colors: map-remove($colors, "indigo", "pink", "teal", "cyan", "orange", "yellow");
+
+$colors: map-merge($hr-colors, $custom-colors);

@@ -1,0 +1,73 @@
+// select
+.form-select {
+  &:disabled {
+    background-image: none;
+  }
+
+  &:focus,
+  &:active {
+    border-color: var(--hr-blue-500);
+    box-shadow:
+      0 0 0 1px var(--bs-body-bg),
+      0 0 0 3px var(--hr-blue-250);
+  }
+
+  &:hover:not(:disabled) {
+    border-color: var(--hr-blue-500);
+    box-shadow: 0 0 0 1px $form-check-input-border;
+  }
+}
+
+// check and radios
+.form-check-input {
+  &[disabled],
+  &:disabled,
+  &[readonly] {
+    color: $gray-850;
+    border-color: $gray-850;
+
+    &:checked {
+      background-color: $gray-850;
+      border-color: $gray-850;
+    }
+
+    ~ .form-check-label {
+      color: $gray-850;
+    }
+  }
+
+  &:focus,
+  &:active {
+    border-color: var(--hr-blue-500);
+    box-shadow:
+      0 0 0 1px var(--bs-body-bg),
+      0 0 0 3px var(--hr-blue-250);
+  }
+
+  &:hover:not(:disabled) {
+    border-color: var(--hr-blue-500);
+    box-shadow: 0 0 0 1px $form-check-input-border;
+  }
+}
+
+// form-controls
+.form-control {
+  &[disabled],
+  &:disabled,
+  &[readonly] {
+    color: $gray-850;
+
+    &::placeholder {
+      color: $gray-850;
+    }
+  }
+  &:focus {
+    border-color: var(--hr-blue-500);
+    box-shadow:
+      0 0 0 1px var(--bs-body-bg),
+      0 0 0 3px var(--hr-blue-250);
+  }
+  &:hover:not(:disabled) {
+    border-color: var(--hr-blue-500);
+  }
+}

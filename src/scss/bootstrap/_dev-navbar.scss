@@ -1,0 +1,78 @@
+.navbar {
+  .nav-item {
+    &.dropdown {
+      .dropdown-toggle {
+        &:after {
+          display: none;
+        }
+      }
+
+      .dropdown-menu {
+        background-color: $secondary;
+        border: 1px solid $secondary;
+        color: #fff;
+
+        .dropdown-item {
+          color: $white;
+          &.active,
+          &:active,
+          &:hover,
+          &:focus {
+            background-color: $white;
+            color: $gray-150;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: $gray-150;
+        background-color: $white;
+      }
+
+      &.disabled {
+        color: $gray-850;
+      }
+    }
+
+    .active > .nav-link,
+    .show > .nav-link,
+    .nav-link.active {
+      color: $gray-150;
+      background-color: $white;
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: $gray-150;
+
+      &:hover,
+      &:focus {
+        color: $white;
+        background-color: $secondary;
+      }
+
+      &.disabled {
+        color: $navbar-light-disabled-color;
+      }
+    }
+
+    .active > .nav-link,
+    .show > .nav-link,
+    .nav-link.active {
+      color: $white;
+      background-color: $secondary;
+    }
+  }
+}

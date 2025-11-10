@@ -1,0 +1,153 @@
+@import "colors/blue";
+@import "colors/purple";
+@import "colors/red";
+@import "colors/lime";
+@import "colors/green";
+@import "colors/gray";
+
+$white: #fff;
+
+$primary: $blue-500 !default;
+$secondary: $blue-250 !default;
+$success: $green-500 !default;
+$warning: $lime-850 !default;
+$danger: $red-500 !default;
+$info: $purple-500 !default;
+$light: $gray-900 !default;
+$dark: $gray-100 !default;
+
+$body-color: $gray-150 !default;
+
+$body-secondary-bg: $gray-850 !default;
+$body-tertiary-bg: $gray-950 !default;
+
+$dropdown-dark-color: $gray-700 !default;
+$dropdown-dark-bg: $gray-200 !default;
+$dropdown-dark-link-disabled-color: $gray-500 !default;
+$dropdown-dark-header-color: $gray-500 !default;
+
+$link-color: $blue-500 !default;
+$link-hover-color: $blue-250 !default;
+
+$btn-font-weight: 700;
+$btn-disabled-opacity: 1;
+$btn-border-width: 0.1rem;
+$btn-border-radius: var(--hr-radius-full);
+$btn-border-radius-sm: var(--hr-radius-full);
+$btn-border-radius-lg: var(--hr-radius-full);
+
+$card-border-radius: var(--hr-radius-medium);
+
+$input-border-radius: var(--hr-radius-smaller);
+$input-border-radius-sm: var(--hr-radius-smaller);
+$input-border-radius-lg: var(--hr-radius-smaller);
+
+$badge-border-radius: var(--hr-radius-full);
+
+$font-family-sans-serif: "Archivo", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$enable-grid-classes: false;
+$enable-cssgrid: true;
+
+$link-hover-decoration: underline !default;
+
+$font-size-base: 0.9375rem !default; // Assumes the browser default, typically `16px`
+$lead-font-size: $font-size-base;
+$lead-font-weight: normal;
+$font-size-sm: 0.75rem !default;
+
+// footer
+$nav-separator: "|" !default;
+
+// tables
+$table-column-space: 8px !default;
+$table-th-font-weight: bold;
+$table-striped-bg-factor: 0.025;
+$table-hover-bg: $gray-950 !default;
+$table-border-color: $gray-800 !default;
+
+// popovers
+$popover-border-color: #ddd !default;
+$popover-header-bg: var(--hr-blue-850);
+
+// tooltip
+$tooltip-color: $white;
+$tooltip-bg: $blue-500;
+$tooltip-border-radius: var(--hr-radius-min);
+
+//navbar
+$navbar-padding-y: 1px;
+
+//nav
+$nav-tabs-border-width: 2px;
+$nav-tabs-border-color: $blue-250 !default;
+$nav-tabs-border-top-color: $gray-700 !default;
+$nav-tabs-link-color: $gray-150 !default;
+$nav-tabs-link-active-color: $white !default;
+$nav-tabs-link-active-bg: $blue-250 !default;
+
+//breadcrumbs
+$breadcrumb-color: var(--hr-blue-250) !default;
+$breadcrumb-active-color: $body-color !default;
+$breadcrumb-divider-color: $body-color !default;
+
+//dropdowns
+$dropdown-link-color: $body-color !default;
+$dropdown-padding-y: 0;
+$dropdown-padding-x: 0;
+$dropdown-divider-margin-y: 0;
+$dropdown-link-border-color: #fff !default;
+$dropdown-link-hover-color: #fff !default;
+$dropdown-link-hover-bg: $blue-250 !default;
+
+//pagination
+$pagination-color: $blue-500 !default;
+$pagination-bg: #fff !default;
+$pagination-border-color: #ddd !default;
+
+$pagination-hover-color: $pagination-color !default;
+$pagination-hover-bg: #edebe9 !default;
+$pagination-hover-border-color: $pagination-border-color !default;
+
+$pagination-active-color: $pagination-color !default;
+$pagination-active-bg: $pagination-hover-bg !default;
+$pagination-active-border-color: $pagination-border-color !default;
+
+$pagination-disabled-color: $gray-600 !default;
+$pagination-disabled-bg: $pagination-bg !default;
+$pagination-disabled-border-color: $pagination-border-color !default;
+
+//alerts
+$alert-link-font-weight: normal !default;
+
+//- forms
+$input-color: $body-color !default;
+$input-border-color: $gray-700 !default;
+$input-focus-border-color: $input-border-color;
+
+$input-text-disabled: $gray-850 !default;
+$input-disabled-color: $gray-850 !default;
+$input-disabled-border-color: $gray-850 !default;
+$input-disabled-bg: var(--bs-body-bg) !default;
+
+//select
+$form-select-indicator-color: $body-color;
+$form-select-disabled-color: $gray-850;
+$form-select-disabled-border-color: $gray-850;
+
+//checks and radios
+$form-check-input-disabled-opacity: 1;
+
+//accordion
+$accordion-button-focus-box-shadow: 0 0 0 1px var(--hr-blue-250);
+$accordion-border-radius: 0;
+$accordion-button-active-bg: var(--bs-body-bg);
+$accordion-border-color: $gray-850;
+$accordion-button-color: $blue-250;
+
+$accordion-icon-color: $blue-500;
+$accordion-icon-active-color: $blue-500;
+$accordion-icon-transform: none;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='#{$accordion-icon-color}' d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='#{$accordion-icon-active-color}' d='M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z'/></svg>");

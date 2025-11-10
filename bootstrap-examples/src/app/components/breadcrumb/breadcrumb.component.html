@@ -1,0 +1,35 @@
+<h1>Breadcrumbs</h1>
+<p>Indicate the current page’s location within a navigational hierarchy.</p>
+<p>
+  Separators are automatically added in CSS through <code>:before</code> and <code>content</code>.
+  You can change them by overwriting the <code>$breadcrumb-separator</code> variable.
+</p>
+
+<div class="hr-example">
+  <nav aria-label="breadcrumb"
+       role="navigation">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active"
+          aria-current="page">Home</li>
+    </ol>
+  </nav>
+
+  <nav aria-label="breadcrumb"
+       role="navigation">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active"
+          aria-current="page">Library</li>
+    </ol>
+  </nav>
+
+  <nav aria-label="breadcrumb"
+       role="navigation">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active"
+          aria-current="page">Data</li>
+    </ol>
+  </nav>
+</div>

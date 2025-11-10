@@ -1,0 +1,55 @@
+.footer,
+  // Legacy
+.brand-footer {
+  position: relative;
+  padding: 5px 15px;
+  background: $secondary;
+  color: #fff;
+  &.footer-subbrand {
+    margin-top: 63px; // Add exta space for the brand logo
+  }
+  @include clearfix; // clear it in case folks use .pull-right classes inside
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  // Nav in footer
+  // -------------------------
+  .nav {
+    > li {
+      display: inline-block;
+
+      + li:before {
+        content: "#{$nav-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+        padding: 0 5px;
+        color: #fff;
+      }
+
+      > a {
+        display: inline;
+        padding: 0;
+        &:hover {
+          background: none;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // 1: Logo only displayed in small view
+  .brand-logo {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -43px;
+    height: 23px;
+    @include media-breakpoint-up(xs) {
+      display: none; /* 1 */
+    }
+  }
+}

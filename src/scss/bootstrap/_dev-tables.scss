@@ -1,0 +1,36 @@
+.table {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > * {
+        ~ * {
+          border-left: $table-column-space solid $body-bg;
+        }
+      }
+    }
+  }
+
+  > thead > tr > th {
+    border-bottom: 2px solid var(--hr-blue-250);
+  }
+
+  &.table-hover {
+    > tbody {
+      > tr {
+        &:hover {
+          > * {
+            border-left-color: $gray-950;
+            border-bottom-color: $gray-950;
+          }
+        }
+      }
+
+      tr:has(+ tr:hover) {
+        > * {
+          border-bottom-color: $gray-950;
+        }
+      }
+    }
+  }
+}

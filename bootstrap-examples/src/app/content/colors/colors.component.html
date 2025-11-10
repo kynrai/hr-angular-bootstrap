@@ -1,0 +1,203 @@
+<h2>Colors</h2>
+
+<div class="accordion"
+     id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseBlue"
+              aria-expanded="true"
+              aria-controls="collapseBlue">
+        Blues
+      </button>
+    </h2>
+    <div id="collapseBlue"
+         class="accordion-collapse collapse show"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="colors d-grid">
+          <span class="fw-bolder">Color</span>
+          <span class="fw-bolder"></span>
+          <span class="fw-bolder">RGB</span>
+          <span class="fw-bolder">HEX</span>
+          <ng-container *ngFor="let blue of blues">
+            <input type="color"
+                   class="form-control-plaintext form-control-color"
+                   [value]="blue.hex"
+                   disabled>
+            <span class="fw-bold">{{blue.name}}</span>
+            <span>{{blue.hex | hexToRgb}}</span>
+            <span>{{blue.hex}}</span>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseGreen"
+              aria-expanded="false"
+              aria-controls="collapseGreen">
+        Greens
+      </button>
+    </h2>
+    <div id="collapseGreen"
+         class="accordion-collapse collapse"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="colors d-grid">
+          <span class="fw-bolder">Color</span>
+          <span class="fw-bolder"></span>
+          <span class="fw-bolder">RGB</span>
+          <span class="fw-bolder">HEX</span>
+          <ng-container *ngFor="let green of greens">
+            <input type="color"
+                   class="form-control-plaintext form-control-color"
+                   [value]="green.hex"
+                   disabled>
+            <span class="fw-bold">{{green.name}}</span>
+            <span>{{green.hex | hexToRgb}}</span>
+            <span>{{green.hex}}</span>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseLime"
+              aria-expanded="false"
+              aria-controls="collapseLime">
+        Limes
+      </button>
+    </h2>
+    <div id="collapseLime"
+         class="accordion-collapse collapse"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="colors d-grid">
+          <span class="fw-bolder">Color</span>
+          <span class="fw-bolder"></span>
+          <span class="fw-bolder">RGB</span>
+          <span class="fw-bolder">HEX</span>
+          <ng-container *ngFor="let lime of limes">
+            <input type="color"
+                   class="form-control-plaintext form-control-color"
+                   [value]="lime.hex"
+                   disabled>
+            <span class="fw-bold">{{lime.name}}</span>
+            <span>{{lime.hex | hexToRgb}}</span>
+            <span>{{lime.hex}}</span>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsePurple"
+              aria-expanded="false"
+              aria-controls="collapsePurple">
+        Purples
+      </button>
+    </h2>
+    <div id="collapsePurple"
+         class="accordion-collapse collapse"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="colors d-grid">
+          <span class="fw-bolder">Color</span>
+          <span class="fw-bolder"></span>
+          <span class="fw-bolder">RGB</span>
+          <span class="fw-bolder">HEX</span>
+          <ng-container *ngFor="let purple of purples">
+            <input type="color"
+                   class="form-control-plaintext form-control-color"
+                   [value]="purple.hex"
+                   disabled>
+            <span class="fw-bold">{{purple.name}}</span>
+            <span>{{purple.hex | hexToRgb}}</span>
+            <span>{{purple.hex}}</span>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseRed"
+              aria-expanded="false"
+              aria-controls="collapseRed">
+        Reds
+      </button>
+    </h2>
+    <div id="collapseRed"
+         class="accordion-collapse collapse"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="colors d-grid">
+          <span class="fw-bolder">Color</span>
+          <span class="fw-bolder"></span>
+          <span class="fw-bolder">RGB</span>
+          <span class="fw-bolder">HEX</span>
+          <ng-container *ngFor="let red of reds">
+            <input type="color"
+                   class="form-control-plaintext form-control-color"
+                   [value]="red.hex"
+                   disabled>
+            <span class="fw-bold">{{red.name}}</span>
+            <span>{{red.hex | hexToRgb}}</span>
+            <span>{{red.hex}}</span>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseGray"
+              aria-expanded="false"
+              aria-controls="collapseGray">
+        Grays
+      </button>
+    </h2>
+    <div id="collapseGray"
+         class="accordion-collapse collapse"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="colors d-grid">
+          <span class="fw-bolder">Color</span>
+          <span class="fw-bolder"></span>
+          <span class="fw-bolder">RGB</span>
+          <span class="fw-bolder">HEX</span>
+          <ng-container *ngFor="let gray of grays">
+            <input type="color"
+                   class="form-control-plaintext form-control-color"
+                   [value]="gray.hex"
+                   disabled>
+            <span class="fw-bold">{{gray.name}}</span>
+            <span>{{gray.hex | hexToRgb}}</span>
+            <span>{{gray.hex}}</span>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

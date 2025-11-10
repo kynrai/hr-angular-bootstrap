@@ -1,0 +1,10 @@
+.accordion-item {
+  border-left: none;
+  border-right: none;
+
+  .accordion-header {
+    .accordion-button {
+      font-weight: bold;
+    }
+  }
+}

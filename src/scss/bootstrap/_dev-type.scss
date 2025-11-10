@@ -1,0 +1,64 @@
+//
+// Headings
+//------------------------
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 h5,
+.h5,
+h6,
+.h6 {
+  color: $secondary;
+}
+
+h4,
+.h4 {
+  color: $primary;
+  font-weight: bold;
+}
+
+p a,
+a.link,
+.card a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a {
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: $gray-850;
+  }
+}
+
+.lead {
+  color: $primary;
+}
+
+// Emphasis & misc
+// -------------------------
+
+mark,
+.mark {
+  background-color: $gray-850;
+  color: #ffffff;
+  padding: 0 0.2em;
+}
+
+.bg-primary,
+.bg-secondary,
+.bg-info,
+.bg-success,
+.bg-warning,
+.bg-danger {
+  color: #fff;
+}
+
+pre {
+  background-color: $gray-950;
+}

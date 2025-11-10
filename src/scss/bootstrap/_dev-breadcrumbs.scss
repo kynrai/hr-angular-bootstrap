@@ -1,0 +1,15 @@
+.breadcrumb {
+  > .breadcrumb-item {
+    &.active {
+      font-weight: bold;
+    }
+
+    > a {
+      color: $breadcrumb-color;
+
+      &:hover {
+        color: var(--hr-blue-500);
+      }
+    }
+  }
+}

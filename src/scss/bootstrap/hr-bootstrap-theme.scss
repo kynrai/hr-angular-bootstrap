@@ -1,0 +1,38 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+@import "dev-variables";
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "dev-colors";
+
+:root {
+  --hr-radius-none: 0;
+  --hr-radius-min: 0.2rem;
+  --hr-radius-smaller: 0.4rem;
+  --hr-radius-small: 1rem;
+  --hr-radius-medium: 2rem;
+  --hr-radius-large: 6rem;
+  --hr-radius-full: 24rem;
+}
+
+@import "bootstrap/scss/bootstrap";
+@import "dev-type";
+@import "dev-accordion";
+@import "dev-breadcrumbs";
+@import "dev-buttons";
+@import "dev-dropdown";
+@import "dev-forms";
+@import "dev-navs";
+@import "dev-navbar";
+@import "dev-tables";
+
+@import "webfont";
+@import "fontawesome";
+
+//custom
+@import "hr-spinner";
+@import "hr-loadingbar";
+@import "hr-brand-header";
+@import "hr-brand-footer";

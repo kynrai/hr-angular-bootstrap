@@ -1,0 +1,60 @@
+.nav-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app-header {
+  display: block;
+  padding: 5px 15px;
+  background: $secondary;
+  color: #fff;
+  .hr-logo {
+    height: 22px;
+  }
+  .pipe {
+    margin: 0 5px;
+  }
+
+  .app-name {
+    font-weight: bold;
+  }
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navbar-toggler {
+    font-size: 1.5rem;
+    color: $primary;
+  }
+
+  .brand {
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      display: block;
+
+      &.hannover-re {
+        height: 50px;
+      }
+
+      &.hr-sub-brand {
+        height: 50px;
+      }
+    }
+  }
+}

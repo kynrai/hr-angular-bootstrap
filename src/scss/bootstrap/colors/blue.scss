@@ -1,0 +1,43 @@
+$blue-050: #001127;
+$blue-100: #001c39;
+$blue-150: #00264b;
+$blue-200: #00315d;
+$blue-250: #003c70;
+$blue-300: #004883;
+$blue-350: #005497;
+$blue-400: #0060ab;
+$blue-450: #006cc0;
+$blue-500: #0077d4;
+$blue-550: #0085eb;
+$blue-600: #3b92f4;
+$blue-650: #559fff;
+$blue-700: #77acff;
+$blue-750: #92baff;
+$blue-800: #aac7ff;
+$blue-850: #c1d5ff;
+$blue-900: #d6e3ff;
+$blue-950: #ebf1ff;
+
+$blue: $blue-250;
+
+$blues: (
+  "blue-050": $blue-050,
+  "blue-100": $blue-100,
+  "blue-150": $blue-150,
+  "blue-200": $blue-200,
+  "blue-250": $blue-250,
+  "blue-300": $blue-300,
+  "blue-350": $blue-350,
+  "blue-400": $blue-400,
+  "blue-450": $blue-450,
+  "blue-500": $blue-500,
+  "blue-550": $blue-550,
+  "blue-600": $blue-600,
+  "blue-650": $blue-650,
+  "blue-700": $blue-700,
+  "blue-750": $blue-750,
+  "blue-800": $blue-800,
+  "blue-850": $blue-850,
+  "blue-900": $blue-900,
+  "blue-950": $blue-950
+);

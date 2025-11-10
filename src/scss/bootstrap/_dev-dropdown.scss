@@ -1,0 +1,5 @@
+.dropdown-menu {
+  li ~ li {
+    border-top: 1px solid $dropdown-link-border-color;
+  }
+}

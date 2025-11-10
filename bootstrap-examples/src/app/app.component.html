@@ -1,0 +1,97 @@
+<div class="layout">
+  <div class="header navbar-expand-md container-fluid">
+    <a class="brand"
+       href="/">
+      <img class="hannover-re logo"
+           src="assets/images/logo-hannover-re-color.svg"
+           alt="Hannover Re" />
+    </a>
+    <span class="d-none d-md-block"> Stuff like search etc. </span>
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <i class="toggle-icon fa-solid fa-bars"></i>
+    </button>
+  </div>
+  <div class="nav-bar">
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+      <div class="collapse navbar-collapse"
+           id="navbarSupportedContent">
+        <ul class="navbar-nav nav-justified w-100 me-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"
+               aria-current="page"
+               routerLink="home"
+               routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item dropdown"
+              routerLinkActive="active">
+            <a class="nav-link dropdown-toggle"
+               id="contentDropdown"
+               role="button"
+               data-bs-toggle="dropdown"
+               aria-expanded="false">
+              Content
+            </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="contentDropdown">
+              <li *ngFor="let link of contentLinks"><a class="dropdown-item"
+                   [routerLink]="link.route"
+                   routerLinkActive="active">{{link.title}}</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown"
+              routerLinkActive="active">
+            <a class="nav-link dropdown-toggle"
+               id="formsDropdown"
+               role="button"
+               data-bs-toggle="dropdown"
+               aria-expanded="false">
+              Forms
+            </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="formsDropdown">
+              <li *ngFor="let link of formsLinks"><a class="dropdown-item"
+                   [routerLink]="link.route"
+                   routerLinkActive="active">{{link.title}}</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown"
+              routerLinkActive="active">
+            <a class="nav-link dropdown-toggle"
+               id="componentsDropdown"
+               role="button"
+               data-bs-toggle="dropdown"
+               aria-expanded="false">
+              Components
+            </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="componentsDropdown">
+              <li *ngFor="let link of componentLinks"><a class="dropdown-item"
+                   [routerLink]="link.route"
+                   routerLinkActive="active">{{link.title}}</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="content"
+       class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
+  <footer>
+    <div class="footer">
+      <span>© 2024 Hannover Re</span>
+      <ul class="nav float-end">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Technical support</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
